@@ -1,0 +1,6 @@
+@mixin title-color {
+  font-size: 50px;
+  background: linear-gradient(180deg, #fff, #adadad);
+  -webkit-background-clip: text;
+  color: transparent;
+}

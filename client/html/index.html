@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../index.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     </style>
-    <script defer src="./app.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/routes.js"></script>
     <title>Neon Deck</title>
   </head>
   <body>
@@ -18,13 +19,15 @@
         </div>
         <ul class="header-nav__list">
           <li><a href="/" class="header-nav__list-item">Home</a></li>
-          <li><a href="/" class="header-nav__list-item">About</a></li>
+          <li>
+            <a href="" class="header-nav__list-item" id="about-button">About</a>
+          </li>
           <li><a href="/" class="header-nav__list-item">Products</a></li>
           <li><a href="/" class="header-nav__list-shop">Shop</a></li>
         </ul>
-        <div class="header-nav__modal-list">
-          <span id="cross1"></span>
-          <span id="cross2"></span>
+        <div class="header-nav__modal-menu">
+          <span id="bar"></span>
+          <span id="bar"></span>
         </div>
       </nav>
     </header>
@@ -48,24 +51,43 @@
       <section class="destacable">
         <div class="destacable-container">
           <div class="destacable-item">
-            <img class="destacable-circle" src="Images/Circle 1.png" alt="" />
+            <img
+              class="destacable-circle"
+              src="../Images/Circle 1.png"
+              alt=""
+            />
             <h2>Commitment to Customer Experience</h2>
           </div>
 
-          <img class="destacable-arrow" src="Images/arrow.png" alt="" />
+          <img class="destacable-arrow" src="../Images/arrow.png" alt="" />
 
           <div class="destacable-item">
-            <img class="destacable-circle" src="Images/Circle 2.png" alt="" />
+            <img
+              class="destacable-circle"
+              src="../Images/Circle 2.png"
+              alt=""
+            />
             <h2>Unparalleled Quality and Durability</h2>
           </div>
 
-          <img class="destacable-arrow" src="Images/arrow.png" alt="" />
+          <img class="destacable-arrow" src="../Images/arrow.png" alt="" />
 
           <div class="destacable-item">
-            <img class="destacable-circle" src="Images/Circle 3.png" alt="" />
+            <img
+              class="destacable-circle"
+              src="../Images/Circle 3.png"
+              alt=""
+            />
             <h2>Technological Innovation in Materials</h2>
           </div>
         </div>
+      </section>
+      <section class="pictures">
+        <h2>Driven To Enhace Your Game Experience</h2>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </section>
     </main>
   </body>
