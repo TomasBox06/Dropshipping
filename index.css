@@ -2,10 +2,10 @@
 .header {
   width: 100%;
   height: 70px;
-  background-color: #141414;
+  background-color: #000;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 3px hsla(0, 0%, 100%, 0.06) solid;
 }
 .header-nav {
   width: 100%;
@@ -44,7 +44,7 @@
 .header-nav__list-shop {
   border: none;
   background: #fff;
-  color: #141414;
+  color: #000;
   font-weight: 600;
   border-radius: 5px;
   padding: 5px;
@@ -87,12 +87,13 @@
 
 .hero {
   height: 600px;
-  background: linear-gradient(to right, #141414, #000);
+  background: #000;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   justify-content: space-between;
   align-items: center;
+  border-bottom: rgba(255, 255, 255, 0.06) solid 2px;
 }
 .hero-title {
   font-size: 50px;
@@ -101,6 +102,7 @@
   color: transparent;
   width: 80%;
   text-align: center;
+  letter-spacing: -3px;
 }
 .hero-description {
   font-size: 20px;
@@ -113,7 +115,191 @@
 }
 .hero-buttons {
   display: flex;
-  gap: 10px;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+.hero-buttons :nth-child(1) {
+  border: none;
+  background-color: #fff;
+}
+.hero-buttons :nth-child(2) {
+  background-color: hsla(0, 0%, 100%, 0.06);
+  border: #fff 2px solid;
+  color: #fff;
+}
+.hero-buttons button {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hero-buttons button:hover {
+  cursor: pointer;
+}
+@media (min-width: 841px) and (max-width: 1150px) {
+  .hero {
+    height: 480px;
+    padding-top: 80px;
+  }
+  .hero-title {
+    font-size: 40px;
+    width: 90%;
+  }
+  .hero-description {
+    width: 80%;
+    font-size: 16px;
+  }
+  .hero-buttons {
+    gap: 40px;
+    padding-bottom: 16px;
+  }
+  .hero-buttons button {
+    width: 112px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 840px) {
+  .hero {
+    height: 360px;
+    padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 30px;
+    width: 90%;
+  }
+  .hero-description {
+    width: 90%;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .hero-buttons {
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+  .hero-buttons button {
+    width: 112px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .hero {
+    padding-top: 30px;
+  }
+  .hero-title {
+    font-size: 25px;
+  }
+  .hero-description {
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+  .hero-buttons {
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  .hero-buttons button {
+    border-radius: 8px;
+    font-size: 13px;
+  }
+}
+
+.destacable {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.destacable-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.destacable-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.destacable-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.destacable h2 {
+  font-weight: 400;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+}
+.destacable-arrow {
+  width: 10px;
+  height: 15px;
+}
+@media (min-width: 841px) and (max-width: 1150px) {
+  .destacable {
+    height: 320px;
+  }
+  .destacable-container {
+    width: 90%;
+  }
+  .destacable-item {
+    gap: 40px;
+  }
+  .destacable-circle {
+    width: 56px;
+    height: 56px;
+  }
+  .destacable h2 {
+    width: 120px;
+    font-size: 12px;
+  }
+  .destacable-arrow {
+    width: 8px;
+    height: 12px;
+  }
+}
+@media (max-width: 840px) {
+  .destacable {
+    height: 240px;
+  }
+  .destacable-container {
+    width: 100%;
+  }
+  .destacable-item {
+    gap: 15px;
+  }
+  .destacable-circle {
+    width: 42px;
+    height: 42px;
+  }
+  .destacable h2 {
+    width: auto;
+    font-size: 9.6px;
+  }
+  .destacable-arrow {
+    width: 6px;
+    height: 9.6px;
+  }
+}
+@media (max-width: 475px) {
+  .destacable-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .destacable-item {
+    width: 200px;
+  }
+  .destacable-arrow {
+    display: none !important;
+  }
 }
 
 * {
