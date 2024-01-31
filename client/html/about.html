@@ -3,10 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="../js/routes.js"></script>
+    <link rel="stylesheet" href="../../about.css" />
     <title>About us</title>
   </head>
   <body>
-    <h1>ABOUT SECTION</h1>
+    <header class="header">
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <h1>Neon Deck</h1>
+        </div>
+        <ul class="header-nav__list">
+          <li><a href="./index.html" class="header-nav__list-item">Home</a></li>
+          <li>
+            <a
+              href="./about.html"
+              class="header-nav__list-item"
+              id="about-button"
+              >About</a
+            >
+          </li>
+          <li><a href="/" class="header-nav__list-item">Products</a></li>
+          <li><a href="/" class="header-nav__list-shop">Shop</a></li>
+        </ul>
+        <div class="header-nav__modal-menu">
+          <span id="bar"></span>
+          <span id="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-title">
+          <h1>Our journey so far...</h1>
+        </div>
+        <div class="hero-container">
+          <div class="hero-image">
+            <img
+              src="../Images/pokerCard.png"
+              alt=""
+              class="hero-card__image"
+            />
+          </div>
+          <div class="hero-text">
+            <p>
+              <span class="span">Welcome to Neon Deck:</span> We are delighted
+              to welcome you to our world of innovation and quality. Since our
+              humble beginnings in 1995, we have grown and evolved, becoming the
+              preferred choice for poker card enthusiasts worldwide.
+            </p>
+            <br />
+            <br /><br />
+            <p>
+              <span class="span">Passion for Excellence:</span> At Neon Deck,
+              our passion for excellence drives every aspect of our work. Every
+              card we create is the result of an unwavering dedication to
+              quality and design. We strive to offer not just poker cards but
+              authentic pieces of art that elevate the gaming experience.
+            </p>
+            <br />
+            <br /><br />
+            <p>
+              <span class="span">Innovation and Commitment:</span> As industry
+              leaders, we have embraced innovation and are committed to
+              delivering products that exceed expectations. At Neon Deck, we
+              don't just sell cards; we create unique experiences. Our
+              trajectory reflects a journey of constant growth, driven by
+              customer satisfaction and a relentless pursuit of excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="extra">
+        <div class="extra-title">
+          <h2>Meet our team</h2>
+        </div>
+        <div class="extra-images__container">
+          <img src="../Images/portrait1.png" id="image1" class="extra-images" />
+          <img src="../Images/portrait2.png" id="image2" class="extra-images" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

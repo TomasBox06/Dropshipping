@@ -1,0 +1,28 @@
+.extra {
+  height: 600px;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  &-title {
+    color: rgb(29, 103, 128);
+    font-size: 37px;
+  }
+  &-images-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+
+  &-images {
+    width: 250px;
+    height: 250px;
+    border: rgba(255, 255, 255, 0.06) solid 3px;
+    border-radius: 50%;
+    margin: 0 200px;
+    margin-bottom: 100px;
+  }
+}
