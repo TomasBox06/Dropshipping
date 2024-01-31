@@ -4,24 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+    </style>
+    <script defer src="./app.js"></script>
     <title>Neon Deck</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-logo">
-        <h1>Neon Deck</h1>
-      </div>
-      <div class="header-list">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About us</a></li>
-          <li><a href="/">Our Products</a></li>
-          <li><a href="/" class="goShop">Go Shop</a></li>
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <h1>Neon Deck</h1>
+        </div>
+        <ul class="header-nav__list">
+          <li><a href="/" class="header-nav__list-item">Home</a></li>
+          <li><a href="/" class="header-nav__list-item">About</a></li>
+          <li><a href="/" class="header-nav__list-item">Products</a></li>
+          <li><a href="/" class="header-nav__list-shop">Shop</a></li>
         </ul>
-      </div>
+        <div class="header-nav__modal-list">
+          <span id="cross1"></span>
+          <span id="cross2"></span>
+        </div>
+      </nav>
     </header>
     <main class="container">
-      <section></section>
+      <section class="hero">
+        <div class="hero-title">
+          <h1>Neon Deck, Where strategy meets innovation</h1>
+        </div>
+        <div class="hero-description">
+          <p>
+            Designing cutting-edge poker cards, Neon Deck sparks excitement and
+            redefines gaming with <span>futuristic style, high-quality</span>,
+            and unforgettable experiences for players worldwide
+          </p>
+        </div>
+        <div class="hero-buttons">
+          <button>Go Shop</button>
+          <button>Our Products</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>

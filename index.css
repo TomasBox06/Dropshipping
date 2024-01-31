@@ -1,52 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .header {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: #141414;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav__modal-list {
+  display: none;
+}
+.header-nav__logo {
+  margin-left: 200px;
+}
+.header-nav__logo h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.header-nav__logo h1:hover {
+  cursor: pointer;
+}
+.header-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+.header-nav__list-item {
+  font-size: 15px;
+  color: rgba(197, 200, 203, 0.377);
+  text-decoration: none;
+  padding-right: 50px;
+  transition: 0.2s all ease;
+}
+.header-nav__list-item:hover {
+  color: #fff;
+}
+.header-nav__list-shop {
+  border: none;
+  background: #fff;
+  color: #141414;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+.header-nav__list-shop:hover {
+  cursor: pointer;
+}
+@media (min-width: 751px) and (max-width: 1050px) {
+  .header-nav__logo {
+    margin-left: 50px;
+  }
+  .header-nav ul {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 750px) {
+  .header-nav__logo {
+    margin-left: 40px;
+  }
+  .header-nav__list {
+    display: none !important;
+  }
+  .header-nav__modal-list {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  .header-nav__modal-list:hover {
+    cursor: pointer;
+  }
+  .header-nav__modal-list span {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+.hero {
+  height: 600px;
+  background: linear-gradient(to right, #141414, #000);
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
   justify-content: space-between;
   align-items: center;
 }
-.header-logo {
-  width: 25%;
-  height: 33%;
-  margin-left: 40px;
-  h1 {
-    padding-top: 25px;
-    color: lightblue;
-    font-size: 40px;
-  }
+.hero-title {
+  font-size: 50px;
+  background: linear-gradient(180deg, #fff, #adadad);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 80%;
+  text-align: center;
 }
-.header-list {
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-  }
-  li {
-    margin-right: 10px;
-  }
-  a {
-    display: flex;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    padding-right: 40px;
-    padding-left: 40px;
-    align-items: center;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .goShop {
-    border: none;
-    background: linear-gradient(to right, rgb(226, 80, 7), rgb(205, 9, 212));
-    border-radius: 5px;
-    margin-right: 40px;
-  }
+.hero-description {
+  font-size: 20px;
+  color: rgba(197, 200, 203, 0.377);
+  width: 50%;
+  text-align: center;
+}
+.hero-description span {
+  color: #fff;
+}
+.hero-buttons {
+  display: flex;
+  gap: 10px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
+/*# sourceMappingURL=index.css.map */
