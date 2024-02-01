@@ -1,19 +1,17 @@
 @use "variables" as var;
+@use "mixins" as mix;
 
 .hero {
   height: 600px;
   background: #000;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
   border-bottom: rgba(255, 255, 255, 0.06) solid 2px;
   &-title {
-    font-size: 50px;
-    background: linear-gradient(180deg, #fff, #adadad);
-    -webkit-background-clip: text;
-    color: transparent;
+    @include mix.title-color;
     width: 80%;
     text-align: center;
     letter-spacing: -3px;

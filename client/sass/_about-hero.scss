@@ -1,4 +1,5 @@
 @use "variables" as var;
+@use "mixins" as mix;
 
 .hero {
   height: 1150px;
@@ -10,13 +11,9 @@
   align-items: center;
   border-bottom: rgba(255, 255, 255, 0.06) solid 3px;
   &-title {
-    font-size: 42px;
-    background: linear-gradient(180deg, #fff, #adadad);
-    color: transparent;
-    background-clip: text;
+    @include mix.title-color;
     width: 650px;
     margin-right: 40%;
-    letter-spacing: -3px;
     padding-bottom: 100px;
   }
   &-container {
